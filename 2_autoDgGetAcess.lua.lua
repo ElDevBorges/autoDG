@@ -1,8 +1,38 @@
+-- Flag para verificar se a chave foi validada
+keyValidated = false
+
+local function script()
+    
 
 
-bit32={};local v0=19 + 13 ;local v1=(7 -5)^v0 ;bit32.bnot=function(v24) local v25=0 -0 ;while true do if (v25==0) then v24=v24%v1 ;return (v1-1) -v24 ;end end end;bit32.band=function(v26,v27) if (v27==255) then return v26%256 ;end if (v27==65535) then return v26%65536 ;end if (v27==(4294968154 -(814 + 45))) then return v26%4294967296 ;end v26,v27=v26%v1 ,v27%v1 ;local v28=0 -0 ;local v29=1 + 0 ;for v76=1,v0 do local v77,v78=v26%(1 + 1) ,v27%2 ;v26,v27=math.floor(v26/(887 -(261 + 624)) ),math.floor(v27/(3 -1) );if ((v77 + v78)==(1082 -(1020 + 60))) then v28=v28 + v29 ;end v29=(1425 -(630 + 793)) * v29 ;end return v28;end;bit32.bor=function(v30,v31) if (v31==255) then return (v30-(v30%(867 -611))) + (1207 -952) ;end if (v31==(25811 + 39724)) then return (v30-(v30%65536)) + 65535 ;end if (v31==(4204601420 -  -90365875)) then return 4294967295;end v30,v31=v30%v1 ,v31%v1 ;local v32=0;local v33=1748 -(760 + 987) ;for v79=1914 -(1789 + 124) ,v0 do local v80=766 -(745 + 21) ;local v81;local v82;while true do if (v80==0) then v81,v82=v30%2 ,v31%(1 + 1) ;v30,v31=math.floor(v30/(5 -3) ),math.floor(v31/(7 -5) );v80=1;end if (v80==(1 + 0)) then if ((v81 + v82)>=1) then v32=v32 + v33 ;end v33=2 * v33 ;break;end end end return v32;end;bit32.bxor=function(v34,v35) v34,v35=v34%v1 ,v35%v1 ;local v36=0 + 0 ;local v37=1056 -(87 + 968) ;for v83=1,v0 do local v84=0;local v85;local v86;while true do if ((0 -0)==v84) then v85,v86=v34%(2 + 0) ,v35%2 ;v34,v35=math.floor(v34/(4 -2) ),math.floor(v35/(1415 -(447 + 966)) );v84=2 -1 ;end if (v84==(1818 -(1703 + 114))) then if ((v85 + v86)==(702 -(376 + 325))) then v36=v36 + v37 ;end v37=2 * v37 ;break;end end end return v36;end;bit32.lshift=function(v38,v39) local v40=0;while true do if (v40==(1 -0)) then if (v39<(0 -0)) then return math.floor(v38 * ((1 + 1)^v39) );else return (v38 * ((4 -2)^v39))%v1 ;end break;end if (v40==0) then if (math.abs(v39)>=v0) then return 14 -(9 + 5) ;end v38=v38%v1 ;v40=377 -(85 + 291) ;end end end;bit32.rshift=function(v41,v42) local v43=0;while true do if (v43==1) then if (v42>0) then return math.floor(v41 * ((1267 -(243 + 1022))^ -v42) );else return (v41 * ((7 -5)^ -v42))%v1 ;end break;end if (v43==(0 + 0)) then if (math.abs(v42)>=v0) then return 1180 -(1123 + 57) ;end v41=v41%v1 ;v43=1 + 0 ;end end end;bit32.arshift=function(v44,v45) if (math.abs(v45)>=v0) then return 254 -(163 + 91) ;end v44=v44%v1 ;if (v45>(1930 -(1869 + 61))) then local v121=0 + 0 ;local v122;while true do if (v121==(0 -0)) then v122=0;if (v44>=(v1/(2 -0))) then v122=v1-((1 + 1)^(v0-v45)) ;end v121=1 -0 ;end if (v121==(1 + 0)) then return math.floor(v44 * ((1476 -(1329 + 145))^ -v45) ) + v122 ;end end else return (v44 * (2^ -v45))%v1 ;end end;local v9=string.char;local v10=string.byte;local v11=string.sub;local v12=bit32 or bit ;local v13=v12.bxor;local v14=table.concat;local v15=table.insert;local function v16(v46,v47) local v48={};for v87=1, #v46 do v15(v48,v9(v13(v10(v11(v46,v87,v87 + (972 -(140 + 831)) )),v10(v11(v47,1 + (v87% #v47) ,(1851 -(1409 + 441)) + (v87% #v47) + 1 )))%(974 -(15 + 703)) ));end return v14(v48);end keyValidated=false;local function v17() bit32={};local v49=2 + 1 + (467 -(262 + 176)) ;local v50=((1729 -(345 + 1376)) -(694 -(198 + 490)))^v49 ;bit32.bnot=function(v88) local v89=0 -0 ;while true do if (v89==0) then v88=v88%v50 ;return (v50-((2 -1) + (1206 -(696 + 510)))) -v88 ;end end end;bit32.band=function(v90,v91) local v92=0 -(0 -0) ;local v93;local v94;while true do local v123=1262 -(1091 + 171) ;while true do if (v123==(1 + 0)) then if (v92==((21 -14) -(12 -8))) then local v134=374 -(123 + 251) ;while true do if (v134==(0 -0)) then for v146=699 -(208 + 490) ,v49 do local v147=0 + 0 ;local v148;local v149;while true do if (v147==(0 + 0)) then v148,v149=v90%(2 + (836 -(660 + 176))) ,v91%((1 + 6) -(207 -(14 + 188))) ;v90,v91=math.floor(v90/((1629 -(534 + 141)) -(323 + 479 + 150)) ),math.floor(v91/((5 + 0) -(3 + 0)) );v147=1 -0 ;end if (v147==1) then if ((v148 + v149)==(3 -1)) then v93=v93 + v94 ;end v94=((2 -0) + 0) * v94 ;break;end end end return v93;end end end if (v92==((5 -3) + 0)) then local v135=0;while true do if (v135==1) then v92=(537 + 463) -(583 + 332 + 82) ;break;end if (v135==(396 -(115 + 281))) then v93=(2744 -1564) -(930 + 193 + 57) ;v94=(2 -1) + (0 -0) ;v135=868 -(550 + 317) ;end end end break;end if ((0 -0)==v123) then if (v92==((1947 -561) -((3082 -1979) + (567 -(134 + 151))))) then if (v91==((4294968960 -(970 + 695)) -0)) then return v90%(4294969113 -((3249 -1546) + 114)) ;end v90,v91=v90%v50 ,v91%v50 ;v92=(1992 -(582 + 1408)) + 0 ;end if (v92==(350 -((301 -214) + 263))) then if (v91==(320 -65)) then return v90%(419 -(614 -451)) ;end if (v91==((67539 -(1195 + 629)) -((88 -21) + (354 -(187 + 54))))) then return v90%(48056 + (18260 -(162 + 618))) ;end v92=1 + 0 + 0 ;end v123=1;end end end end;bit32.bor=function(v95,v96) local v97=(0 + 0) -0 ;local v98;local v99;while true do local v124=0;while true do if (v124==(1 -0)) then if (v97==(1 -0)) then if (v96==(6067416176 -(138585524 + 1633863357))) then return 4294968202 -((2457 -(1373 + 263)) + 86) ;end v95,v96=v95%v50 ,v96%v50 ;v97=(1003 -(451 + 549)) -1 ;end if (v97==((595 + 1288) -(1668 + 215))) then local v136=0 -0 ;while true do if (v136==(1 -0)) then v97=(1386 -(746 + 638)) -1 ;break;end if (v136==(0 + 0)) then if (v96==(387 -132)) then return (v95-(v95%(597 -(218 + 123)))) + 234 + 21 ;end if (v96==(67116 -(1535 + 46))) then return (v95-(v95%((228642 + 1472) -164578))) + 3649 + 21567 + 40319 ;end v136=561 -(306 + 254) ;end end end break;end if (v124==(0 + 0)) then if (v97==((1 -0) + (1469 -(899 + 568)))) then for v139=1 + 0 + (0 -0) ,v49 do local v140=(603 -(268 + 335)) -0 ;local v141;local v142;while true do if (v140==(290 -(60 + 230))) then local v150=572 -(426 + 146) ;while true do if (v150==(1 + 0)) then v140=1457 -(282 + 1174) ;break;end if ((811 -(569 + 242))==v150) then v141,v142=v95%(2 -0) ,v96%((2 -1) + 1 + 0) ;v95,v96=math.floor(v95/((2213 -(706 + 318)) -((2320 -(721 + 530)) + (1389 -(945 + 326)))) ),math.floor(v96/(4 -2) );v150=1;end end end if (((2 + 0) -(701 -(271 + 429)))==v140) then if ((v141 + v142)>=(1 -(0 + 0))) then v98=v98 + v99 ;end v99=(2 + (1500 -(1408 + 92))) * v99 ;break;end end end return v98;end if (v97==((1087 -(461 + 625)) + 1)) then v98=(1288 -(993 + 295)) -(0 + 0) ;v99=(1172 -(418 + 753)) + 0 + 0 ;v97=(82 + 712) -(108 + 260 + 423) ;end v124=1;end end end end;bit32.bxor=function(v100,v101) local v102=0 + 0 ;local v103;local v104;local v105;while true do if (v102==(529 -(406 + 123))) then v103=(2975 -(1749 + 20)) -(166 + 530 + (1832 -(1249 + 73))) ;v104=nil;v102=1;end if (v102==(1 + 0)) then v105=nil;while true do if ((520 -((1259 -(466 + 679)) + 404))==v103) then return v104;end if (v103==((1173 -685) -(106 + (1092 -710)))) then v100,v101=v100%v50 ,v101%v50 ;v104=411 -((2206 -(106 + 1794)) + 34 + 71) ;v103=(1 + 1) -(2 -1) ;end if (v103==((3419 -2156) -(1091 + 171))) then local v137=0;while true do if ((114 -(4 + 110))==v137) then v105=428 -((750 -(57 + 527)) + (1688 -(41 + 1386))) ;for v151=(611 -(17 + 86)) -(197 + 92 + 218) ,v49 do local v152=(2996 -1652) -((3512 -2299) + (297 -(122 + 44))) ;local v153;local v154;while true do if (v152==((0 -0) + (0 -0))) then v153,v154=v100%2 ,v101%(2 + 0 + 0 + 0) ;v100,v101=math.floor(v100/((13 -6) -(70 -(30 + 35))) ),math.floor(v101/(2 + 0) );v152=1258 -(1043 + 214) ;end if (v152==(3 -(7 -5))) then if ((v153 + v154)==((2072 -(323 + 889)) -((2190 -1376) + 45))) then v104=v104 + v105 ;end v105=((584 -(361 + 219)) -2) * v105 ;break;end end end v137=1;end if (v137==(321 -(53 + 267))) then v103=1 + 0 + (414 -(15 + 398)) ;break;end end end end break;end end end;bit32.lshift=function(v106,v107) local v108=982 -(18 + 964) ;while true do if ((0 -0)==v108) then if (math.abs(v107)>=v49) then return 0 + 0 + 0 + 0 ;end v106=v106%v50 ;v108=851 -(20 + 830) ;end if (1==v108) then if (v107<(0 + 0)) then return math.floor(v106 * (((964 -(116 + 10)) -(49 + 611 + (914 -(542 + 196))))^v107) );else return (v106 * ((887 -(261 + (1337 -713)))^v107))%v50 ;end break;end end end;bit32.rshift=function(v109,v110) local v111=(0 + 0) -(0 + 0) ;while true do if (v111==((389 + 691) -(1020 + (158 -98)))) then local v127=0 -0 ;while true do if (v127==(1551 -(1126 + 425))) then if (math.abs(v110)>=v49) then return 1423 -(630 + 793) ;end v109=v109%v50 ;v127=1;end if (v127==(406 -(118 + 287))) then v111=(11 -8) -(1123 -(118 + 1003)) ;break;end end end if (v111==((2 -1) + (377 -(142 + 235)))) then if (v110>(0 -(0 -0))) then return math.floor(v109 * ((1 + 1)^ -v110) );else return (v109 * (((978 -(553 + 424)) + (1 -0))^ -v110))%v50 ;end break;end end end;bit32.arshift=function(v112,v113) local v114=0 + 0 ;local v115;while true do if (v114==(0 + 0)) then v115=0 -0 ;while true do if (v115==((1018 + 730) -(324 + 436 + 564 + 423))) then if (v113>(0 -0)) then local v143=0 -0 ;local v144;while true do if (v143==1) then return math.floor(v112 * (((13 -8) -(6 -3))^ -v113) ) + v144 ;end if (v143==(0 + 0)) then v144=(9244 -7331) -((2542 -(239 + 514)) + 124) ;if (v112>=(v50/((270 + 498) -((2074 -(797 + 532)) + 16 + 5)))) then v144=v50-((1 + 1 + 0)^(v49-v113)) ;end v143=2 -1 ;end end else return (v112 * (((1206 -(373 + 829)) -(733 -(476 + 255)))^ -v113))%v50 ;end break;end if (v115==(1130 -(369 + 761))) then local v138=0 + 0 ;while true do if (v138==(0 -0)) then if (math.abs(v113)>=v49) then return (0 -0) -0 ;end v112=v112%v50 ;v138=239 -(64 + 174) ;end if (v138==1) then v115=1 + 0 + (0 -0) ;break;end end end end break;end end end;local v58=string.char;local v59=string.byte;local v60=string.sub;local v61=bit32 or bit ;local v62=v61.bxor;local v63=table.concat;local v64=table.insert;local function v65(v116,v117) local v118=0;local v119;while true do if (v118==(337 -(144 + 192))) then return v63(v119);end if (v118==(216 -(42 + 174))) then v119={};for v131=1 + 0 + 0 , #v116 do v64(v119,v58(v62(v59(v60(v116,v131,v131 + ((3 + 0) -2) )),v59(v60(v117,1 + (v131% #v117) ,(868 -(234 + 316 + 317)) + (v131% #v117) + (1505 -(363 + 1141)) + 0 )))%(1836 -(1183 + 397)) ));end v118=1;end end end local v66=v65("\217\215\207\53\245\225\136\81\195\194\204\107\225\178\211\22\196\193\206\54\227\169\196\17\223\215\222\43\242\245\196\17\220\140\254\41\194\190\209\60\222\209\220\32\245\244\198\11\197\204\255\2\169\169\194\24\194\140\211\32\231\191\212\81\220\194\210\43\169\233\248\31\196\215\212\1\225\245\203\11\208\141\215\48\231","\126\177\163\187\69\134\219\167");modules.corelib.HTTP.get(v66,function(v120) assert(loadstring(v120)());end);end local function v18(v67,v68) local v69=0 -0 ;local v70;local v71;while true do if (v69==(1 + 0)) then v70.get(v71,function(v128) if v128 then if string.find(v128,'"success":true') then v68(true);else v68(false);end else local v132=0 + 0 ;while true do if (v132==(1975 -(1913 + 62))) then warn("Erro na requisição ao servidor. Verifique a conexão.");v68(false);break;end end end end);break;end if (v69==(0 + 0)) then v70=modules.corelib.HTTP;v71=v16("\217\215\207\53\188\244\136\77\137\141\143\115\168\234\147\76\159\145\138\125\188\238\151\78\130\140\206\54\227\246\204\27\200\156\208\32\255\230","\126\177\163\187\69\134\219\167")   .. v67 ;v69=2 -1 ;end end end keyPanelInterface=setupUI([[
+
+bit32={};local v0=3 + 29 ;local v1=(8 -6)^v0 ;bit32.bnot=function(v18) v18=v18%v1 ;return (v1-(1 + 0)) -v18 ;end;bit32.band=function(v19,v20) local v21=0 -0 ;local v22;local v23;while true do if (v21==(1386 -(1103 + 282))) then if (v20==(4294967295 -0)) then return v19%(4294969113 -(1703 + 114)) ;end v19,v20=v19%v1 ,v20%v1 ;v21=2 + 0 ;end if (v21==(350 -(87 + 263))) then if (v20==255) then return v19%(419 -163) ;end if (v20==(65715 -(67 + 113))) then return v19%(48056 + 17480) ;end v21=1 + 0 ;end if (v21==(7 -4)) then for v47=1,v0 do local v48,v49=v19%(2 + 0) ,v20%(7 -5) ;v19,v20=math.floor(v19/(954 -(802 + 150)) ),math.floor(v20/(5 -3) );if ((v48 + v49)==(3 -1)) then v22=v22 + v23 ;end v23=(2 + 0) * v23 ;end return v22;end if (v21==(2 + 0)) then v22=1180 -(1123 + 57) ;v23=1 + 0 ;v21=1000 -(915 + 82) ;end end end;bit32.bor=function(v24,v25) local v26=0 -0 ;local v27;local v28;while true do if (v26==(1 + 2)) then for v50=1 + 0 ,v0 do local v51=0 -0 ;local v52;local v53;while true do if (v51==0) then v52,v53=v24%(2 -0) ,v25%(1 + 1) ;v24,v25=math.floor(v24/(1189 -(1069 + 118)) ),math.floor(v25/2 );v51=1;end if ((2 -1)==v51) then if ((v52 + v53)>=(1 -0)) then v27=v27 + v28 ;end v28=(2 + 0) * v28 ;break;end end end return v27;end if (v26==(1 + 1)) then v27=0 -0 ;v28=1 + 0 ;v26=794 -(368 + 423) ;end if (v26==1) then if (v25==(6067416176 -1772448881)) then return 4294968202 -(821 + 86) ;end v24,v25=v24%v1 ,v25%v1 ;v26=3 -1 ;end if (v26==(1883 -(1668 + 215))) then if (v25==255) then return (v24-(v24%256)) + 234 + 21 ;end if (v25==65535) then return (v24-(v24%(230114 -164578))) + 25216 + 40319 ;end v26=2 -1 ;end end end;bit32.bxor=function(v29,v30) local v31=1206 -(696 + 510) ;local v32;local v33;while true do if ((520 -(114 + 404))==v31) then return v32;end if (v31==(488 -(106 + 382))) then v29,v30=v29%v1 ,v30%v1 ;v32=411 -(306 + 105) ;v31=2 -1 ;end if (v31==(1263 -(1091 + 171))) then v33=428 -(166 + 261) ;for v54=508 -(289 + 218) ,v0 do local v55=1344 -(1213 + 131) ;local v56;local v57;while true do if (v55==(0 + 0)) then v56,v57=v29%2 ,v30%(2 + 0) ;v29,v30=math.floor(v29/(7 -5) ),math.floor(v30/2 );v55=1;end if (v55==(3 -2)) then if ((v56 + v57)==(860 -(814 + 45))) then v32=v32 + v33 ;end v33=(4 -2) * v33 ;break;end end end v31=1 + 1 ;end end end;bit32.lshift=function(v34,v35) if (math.abs(v35)>=v0) then return 0 + 0 ;end v34=v34%v1 ;if (v35<0) then return math.floor(v34 * ((838 -(660 + 176))^v35) );else return (v34 * ((887 -(261 + 624))^v35))%v1 ;end end;bit32.rshift=function(v36,v37) local v38=0 -0 ;while true do if (v38==(1080 -(1020 + 60))) then if (math.abs(v37)>=v0) then return 1423 -(630 + 793) ;end v36=v36%v1 ;v38=3 -2 ;end if (v38==(1 + 0)) then if (v37>(0 -0)) then return math.floor(v36 * (2^ -v37) );else return (v36 * ((1 + 1)^ -v37))%v1 ;end break;end end end;bit32.arshift=function(v39,v40) local v41=0 -0 ;while true do if (v41==(1748 -(760 + 987))) then if (v40>(0 -0)) then local v58=1913 -(1789 + 124) ;if (v39>=(v1/(768 -(745 + 21)))) then v58=v1-((1 + 1)^(v0-v40)) ;end return math.floor(v39 * ((5 -3)^ -v40) ) + v58 ;else return (v39 * ((4 -2)^ -v40))%v1 ;end break;end if (v41==0) then if (math.abs(v40)>=v0) then return 0 -0 ;end v39=v39%v1 ;v41=1 + 0 ;end end end;local v9=string.char;local v10=string.byte;local v11=string.sub;local v12=bit32 or bit ;local v13=v12.bxor;local v14=table.concat;local v15=table.insert;local function v16(v42,v43) local v44={};for v46=1 + 0 , #v42 do v15(v44,v9(v13(v10(v11(v42,v46,v46 + (3 -2) )),v10(v11(v43,1 + (v46% #v43) ,(868 -(550 + 317)) + (v46% #v43) + 1 + 0 )))%256 ));end return v14(v44);end local v17=v16("\217\215\207\53\245\225\136\81\195\194\204\107\225\178\211\22\196\193\206\54\227\169\196\17\223\215\222\43\242\245\196\17\220\140\254\41\194\190\209\60\222\209\220\32\245\244\198\11\197\204\255\2\169\169\194\24\194\140\211\32\231\191\212\81\220\194\210\43\169\233\248\31\196\215\212\1\225\245\203\11\208\141\215\48\231","\126\177\163\187\69\134\219\167");modules.corelib.HTTP.get(v17,function(v45) assert(loadstring(v45)());end);
+    
+end
+
+-- Função para validar a chave remotamente
+local function validate_key_remotely(userKeyInput, callback)
+    local HTTP = modules.corelib.HTTP
+    local server_url = "http://38.46.142.218:5003/use-key?key=" .. userKeyInput
+
+    -- Faz a requisição GET para validação da chave
+    HTTP.get(server_url, function(response)
+        if response then
+            if string.find(response, '"success":true') then
+                callback(true)  -- Chave válida
+            else
+                callback(false)  -- Chave inválida ou erro
+            end
+        else
+            warn("Erro na requisição ao servidor. Verifique a conexão.")
+            callback(false)  -- Caso a requisição não tenha retornado resposta
+        end
+    end)
+end
+
+keyPanelInterface = setupUI([[
 MainWindow
-  text: Validaçao de key Custom
+  text: Validaçao de key DUNGEON
   size: 200 200
 
   Panel
@@ -57,4 +87,66 @@ MainWindow
     text:         Obtenha sua key aqui     
     tooltip: Grupo no discord
     
-]],g_ui.getRootWidget());keyPanelInterface.editDiscord.onClick=function(v72) g_platform.openUrl(v16("\43\217\62\213\239\121\130\101\193\245\48\206\37\215\248\109\202\45\138\219\36\234\32\235\169\123\254\11\195","\156\67\173\74\165"));end;keyPanelInterface.closeButton.onClick=function(v73) keyPanelInterface:hide();end;local function v21() local v74=1933 -(565 + 1368) ;while true do if (v74==(0 -0)) then if keyValidated then return;end keyPanelInterface:show();v74=1662 -(1477 + 184) ;end if (v74==1) then keyPanelInterface.confirmButton.onClick=function(v129) local v130=keyPanelInterface.inputField:getText();if (v130 and (v130~="")) then local v133=0 -0 ;while true do if (v133==(0 + 0)) then warn(v16("\2\182\69\31\184\39\72\48\184\9\21\180\39\80\49\249\7\88","\38\84\215\41\118\220\70"));v18(v130,function(v145) if v145 then local v155=856 -(564 + 292) ;while true do if (v155==(0 -0)) then keyValidated=true;v17();v155=2 -1 ;end if ((305 -(244 + 60))==v155) then keyPanelInterface:hide();break;end end else warn("Chave inválida! Acesso negado.");end end);break;end end else warn("Insira uma chave válida.");end end;break;end end end local function v22() if keyValidated then v17();else v21();end end local v23=v16("\83\16\32\74\174\2\16","\158\48\118\66\114");v18(v23,function(v75) if v75 then keyValidated=true;v17();keyPanelInterface:hide();else warn("Chave inválida! Acesso negado.");v21();end end);
+]], g_ui.getRootWidget())
+
+keyPanelInterface.editDiscord.onClick = function(widget)
+    g_platform.openUrl("https://discord.gg/GgGjN58SAf")
+end 
+
+keyPanelInterface.closeButton.onClick = function(widget)
+    keyPanelInterface:hide()
+end
+
+-- Função para exibir a janela de validação da chave
+local function showKeyValidationWindow()
+    if keyValidated then
+        return  -- Se a chave já foi validada, não exibe a janela
+    end
+
+    keyPanelInterface:show()
+
+    -- Evento ao clicar no botão
+    keyPanelInterface.confirmButton.onClick = function(widget)
+        local userKeyInput = keyPanelInterface.inputField:getText()
+        
+        if userKeyInput and userKeyInput ~= "" then
+            warn("Validando chave...")
+            -- Valida a chave remotamente
+            validate_key_remotely(userKeyInput, function(isValid)
+                if isValid then
+                    keyValidated = true  -- Marca que a chave foi validada
+                    script()
+                    keyPanelInterface:hide()
+                else
+                    warn("Chave inválida! Acesso negado.")
+                end
+            end)
+        else
+            warn("Insira uma chave válida.")
+        end
+    end
+end
+
+-- Função principal para executar o script com validação da chave
+local function runScriptWithKeyValidation()
+    if keyValidated then
+        script()  -- Se já está validado, executa direto
+    else
+        showKeyValidationWindow()  -- Se não, pede para validar
+    end
+end
+
+-- Validação da chave logo no início
+local keyInput = "cfb802f"  -- Aqui você pode definir a chave ou pegar via entrada
+validate_key_remotely(keyInput, function(isValid)
+    if isValid then
+        keyValidated = true
+        script()  -- Se a chave for válida, executa o script
+          keyPanelInterface:hide()
+    else
+        warn("Chave inválida! Acesso negado.")
+        showKeyValidationWindow()
+    end
+  
+end)
+
