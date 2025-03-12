@@ -1,2 +1,321 @@
 
-bit32={};local v0=32;local v1=2^v0 ;bit32.bnot=function(v22) v22=v22%v1 ;return (v1-1) -v22 ;end;bit32.band=function(v23,v24) local v25=0 -0 ;local v26;local v27;while true do if (v25==(1884 -(1668 + 215))) then if (v24==4294967295) then return v23%(4294968722 -(562 + 864)) ;end v23,v24=v23%v1 ,v24%v1 ;v25=2;end if (v25==(0 + 0)) then if (v24==(99 + 156)) then return v23%256 ;end if (v24==65535) then return v23%65536 ;end v25=519 -(114 + 404) ;end if (v25==3) then for v143=489 -(106 + 382) ,v0 do local v144,v145=v23%(413 -(306 + 105)) ,v24%(4 -2) ;v23,v24=math.floor(v23/2 ),math.floor(v24/(429 -(166 + 261)) );if ((v144 + v145)==2) then v26=v26 + v27 ;end v27=(509 -(289 + 218)) * v27 ;end return v26;end if (v25==2) then v26=1344 -(1213 + 131) ;v27=1 + 0 ;v25=3;end end end;bit32.bor=function(v28,v29) local v30=0;local v31;local v32;while true do if (v30==(2 + 1)) then for v146=3 -2 ,v0 do local v147=0 -0 ;local v148;local v149;while true do if (v147==(859 -(814 + 45))) then v148,v149=v28%(4 -2) ,v29%(1 + 1) ;v28,v29=math.floor(v28/(1 + 1) ),math.floor(v29/(887 -(261 + 624)) );v147=1 -0 ;end if ((1081 -(1020 + 60))==v147) then if ((v148 + v149)>=(1424 -(630 + 793))) then v31=v31 + v32 ;end v32=(6 -4) * v32 ;break;end end end return v31;end if (v30==(9 -7)) then v31=0 + 0 ;v32=1;v30=9 -6 ;end if (v30==(1748 -(760 + 987))) then if (v29==4294967295) then return 4294969208 -(1789 + 124) ;end v28,v29=v28%v1 ,v29%v1 ;v30=768 -(745 + 21) ;end if (v30==(0 + 0)) then if (v29==(701 -446)) then return (v28-(v28%(1004 -748))) + 3 + 252 ;end if (v29==(51453 + 14082)) then return (v28-(v28%65536)) + (66590 -(87 + 968)) ;end v30=1;end end end;bit32.bxor=function(v33,v34) v33,v34=v33%v1 ,v34%v1 ;local v35=0 -0 ;local v36=1 + 0 ;for v128=2 -1 ,v0 do local v129,v130=v33%2 ,v34%2 ;v33,v34=math.floor(v33/2 ),math.floor(v34/(1415 -(447 + 966)) );if ((v129 + v130)==1) then v35=v35 + v36 ;end v36=2 * v36 ;end return v35;end;bit32.lshift=function(v37,v38) if (math.abs(v38)>=v0) then return 0 -0 ;end v37=v37%v1 ;if (v38<0) then return math.floor(v37 * ((1819 -(1703 + 114))^v38) );else return (v37 * ((703 -(376 + 325))^v38))%v1 ;end end;bit32.rshift=function(v39,v40) local v41=0;while true do if (v41==(1 -0)) then if (v40>0) then return math.floor(v39 * ((5 -3)^ -v40) );else return (v39 * (2^ -v40))%v1 ;end break;end if (v41==(0 + 0)) then if (math.abs(v40)>=v0) then return 0 -0 ;end v39=v39%v1 ;v41=15 -(9 + 5) ;end end end;bit32.arshift=function(v42,v43) if (math.abs(v43)>=v0) then return 376 -(85 + 291) ;end v42=v42%v1 ;if (v43>0) then local v139=0;if (v42>=(v1/(1267 -(243 + 1022)))) then v139=v1-((7 -5)^(v0-v43)) ;end return math.floor(v42 * ((2 + 0)^ -v43) ) + v139 ;else return (v42 * ((1182 -(1123 + 57))^ -v43))%v1 ;end end;local v9=string.char;local v10=string.byte;local v11=string.sub;local v12=bit32 or bit ;local v13=v12.bxor;local v14=table.concat;local v15=table.insert;local function v16(v44,v45) local v46=0 + 0 ;local v47;while true do if (v46==(254 -(163 + 91))) then v47={};for v150=1, #v44 do v15(v47,v9(v13(v10(v11(v44,v150,v150 + (1931 -(1869 + 61)) )),v10(v11(v45,1 + (v150% #v45) ,1 + 0 + (v150% #v45) + (3 -2) )))%(392 -136) ));end v46=1 + 0 ;end if (v46==(1 -0)) then return v14(v47);end end end setDefaultTab(v16("\194\192\201\44\246\175\212","\126\177\163\187\69\134\219\167"));UI.Separator();MAIN_DIRECTORY_AUTODG=v16("\108\207\37\209\179","\156\67\173\74\165")   .. modules.game_bot.contentsPanel.config:getCurrentOption().text   .. v16("\123\164\93\25\174\39\65\49\248","\38\84\215\41\118\220\70")   .. g_game.getWorldName()   .. "/" ;STORAGE_DIRECTORY_AUTODG=MAIN_DIRECTORY_AUTODG   .. name()   .. v16("\111\23\55\6\241\116\17\108\24\237\95\24","\158\48\118\66\114") ;profile_autoDg={[v16("\148\55\4\57\97\164\252\174","\155\203\68\112\86\19\197")]={[v16("\71\200\34\243\100\127","\152\38\189\86\156\32\24\133")]={[v16("\249\89\166\68\240\82\163","\38\156\55\199")]=false}}};if  not g_resources.directoryExists(MAIN_DIRECTORY_AUTODG) then g_resources.makeDir(MAIN_DIRECTORY_AUTODG);end function load_file_autoDg() if g_resources.fileExists(STORAGE_DIRECTORY_AUTODG) then local v140=g_resources.readFileContents(STORAGE_DIRECTORY_AUTODG);local v141,v142=pcall(json.decode,v140);if (v141 and v142 and v142._storage and v142._storage.autoDg) then local v151=0 + 0 ;while true do if ((1474 -(1329 + 145))==v151) then profile_autoDg._storage.autoDg=v142._storage.autoDg;warn("Configurações do AutoDg carregadas com sucesso!");break;end end else warn("Erro ao carregar as configurações do AutoDg.");end else warn("Arquivo de configurações do AutoDg não encontrado. Usando configurações padrão.");end end function save_file_autoDg() local v48=971 -(140 + 831) ;local v49;local v50;local v51;while true do if (v48==(1851 -(1409 + 441))) then if  not v50 then warn(v16("\141\111\110\39\83\117\245\3\187\124\112\62\18\102\186\76\232\124\110\57\6\125\236\76\232\121\115\104\50\97\238\76\140\122\38\104","\35\200\29\28\72\115\20\154")   .. v51 );else warn("Configurações do AutoDg salvas com sucesso!");end break;end if ((718 -(15 + 703))==v48) then v49=json.encode(profile_autoDg,4);v50,v51=pcall(function() g_resources.writeFileContents(STORAGE_DIRECTORY_AUTODG,v49);end);v48=1 + 0 ;end end end load_file_autoDg();storage.autoDgEnabled=profile_autoDg._storage.autoDg.enabled or false ;local v18=setupUI(v16("\115\156\217\218\142\39\22\22\167\187\159\205\37\48\67\255\210\215\136\47\63\59\176\201\181\205\108\50\22\177\197\133\205\47\61\9\172\222\217\153\10\59\23\171\187\159\205\56\49\1\171\139\159\172\57\32\22\155\214\181","\84\121\223\177\191\237\76"));v18.onCheckChange=function(v52,v53) storage.autoDgEnabled=v53;profile_autoDg._storage.autoDg.enabled=v53;save_file_autoDg();end;v18:setChecked(storage.autoDgEnabled);local function v20() return storage.autoDgEnabled;end UI.Separator();onTalk(function(v56,v57,v58,v59,v60,v61) if  not v20() then return;end if  not v59:lower():find("%[dungeon yoth%] %-> disponível") then return;end CaveBot.gotoLabel(v16("\162\89\221\168","\161\219\54\169\192\90\48\80"));CaveBot.setOff();CaveBot.setOn();local v62=g_ui.getRootWidget();local v63=v62:getChildren();for v131,v132 in ipairs(v63) do if (v132:getText()==v16("\100\77\19\49\91\67\18\101\93\71\24\49\70","\69\41\34\96")) then v132:destroy();end end return true;end);onTalk(function(v64,v65,v66,v67,v68,v69) local v70=0;local v71;local v72;while true do if (v70==(442 -(262 + 176))) then return true;end if (v70==(1723 -(345 + 1376))) then CaveBot.setOn();v71=g_ui.getRootWidget();v70=691 -(198 + 490) ;end if (v70==3) then v72=v71:getChildren();for v152,v153 in ipairs(v72) do if (v153:getText()==v16("\47\181\152\35\203\3\168\203\35\220\26\174\132","\185\98\218\235\87")) then v153:destroy();end end v70=4;end if (v70==(0 -0)) then if  not v20() then return;end if  not v67:lower():find("%[dungeon renegade%] %-> disponível") then return;end v70=1;end if (v70==(2 -1)) then CaveBot.gotoLabel(v16("\174\198\217\15\5\42\184\198","\75\220\163\183\106\98"));CaveBot.setOff();v70=2;end end end);onTalk(function(v73,v74,v75,v76,v77,v78) if  not v20() then return;end if  not v76:lower():find("%[dungeon bandit%] %-> disponível") then return;end CaveBot.gotoLabel(v16("\201\61\41\226\215\190","\202\171\92\71\134\190"));CaveBot.setOff();CaveBot.setOn();local v79=g_ui.getRootWidget();local v80=v79:getChildren();for v133,v134 in ipairs(v80) do if (v134:getText()==v16("\4\206\63\156\59\192\62\200\61\196\52\156\38","\232\73\161\76")) then v134:destroy();end end return true;end);onTalk(function(v81,v82,v83,v84,v85,v86) local v87=1206 -(696 + 510) ;local v88;local v89;while true do if (v87==(0 -0)) then if  not v20() then return;end if  not v84:lower():find("%[dungeon gaara sc2%] %-> disponível") then return;end v87=1263 -(1091 + 171) ;end if (v87==4) then return true;end if (v87==(1 + 1)) then CaveBot.setOn();v88=g_ui.getRootWidget();v87=9 -6 ;end if (v87==(3 -2)) then CaveBot.gotoLabel(v16("\188\216\67\79\31","\126\219\185\34\61"));CaveBot.setOff();v87=376 -(123 + 251) ;end if (v87==3) then v89=v88:getChildren();for v154,v155 in ipairs(v89) do if (v155:getText()==v16("\33\193\77\102\108\118\225\167\24\203\70\102\113","\135\108\174\62\18\30\23\147")) then v155:destroy();end end v87=19 -15 ;end end end);onTalk(function(v90,v91,v92,v93,v94,v95) local v96=0;local v97;local v98;while true do if (v96==(698 -(208 + 490))) then if  not v20() then return;end if  not v93:lower():find("%[dungeon jya%] %-> disponível") then return;end v96=1 + 0 ;end if (v96==(1 + 1)) then CaveBot.setOn();v97=g_ui.getRootWidget();v96=839 -(660 + 176) ;end if (v96==(1 + 2)) then v98=v97:getChildren();for v156,v157 in ipairs(v98) do if (v157:getText()==v16("\166\255\33\73\234\166\153\176\38\88\224\179\132","\199\235\144\82\61\152")) then v157:destroy();end end v96=206 -(14 + 188) ;end if (v96==(679 -(534 + 141))) then return true;end if (v96==1) then CaveBot.gotoLabel(v16("\188\240\43","\167\214\137\74\171\120\206\83"));CaveBot.setOff();v96=2;end end end);onTalk(function(v99,v100,v101,v102,v103,v104) local v105=0 + 0 ;local v106;local v107;while true do if ((0 + 0)==v105) then if  not v20() then return;end if  not v102:lower():find("%[dungeon kimimaro%] %-> disponível") then return;end v105=1 + 0 ;end if (v105==(1 -0)) then CaveBot.gotoLabel(v16("\12\31\180\34\10\23\171\36","\75\103\118\217"));CaveBot.setOff();v105=2 -0 ;end if ((8 -5)==v105) then v107=v106:getChildren();for v158,v159 in ipairs(v107) do if (v159:getText()==v16("\234\91\99\0\171\31\213\20\100\17\161\10\200","\126\167\52\16\116\217")) then v159:destroy();end end v105=3 + 1 ;end if (v105==(2 + 0)) then CaveBot.setOn();v106=g_ui.getRootWidget();v105=3;end if (v105==4) then return true;end end end);onTalk(function(v108,v109,v110,v111,v112,v113) if  not v20() then return;end if  not v111:lower():find("%[dungeon deidara%] %-> disponível") then return;end CaveBot.gotoLabel(v16("\204\43\41\132\181\11\253","\156\168\78\64\224\212\121"));CaveBot.setOff();CaveBot.setOn();local v114=g_ui.getRootWidget();local v115=v114:getChildren();for v135,v136 in ipairs(v115) do if (v136:getText()==v16("\42\225\182\218\21\239\183\142\19\235\189\218\8","\174\103\142\197")) then v136:destroy();end end return true;end);onTalk(function(v116,v117,v118,v119,v120,v121) if  not v20() then return;end if  not v119:lower():find("%[dungeon tobirama%] %-> disponível") then return;end CaveBot.gotoLabel(v16("\66\39\93\49\55\95\245\87","\152\54\72\63\88\69\62"));CaveBot.setOff();CaveBot.setOn();local v122=g_ui.getRootWidget();local v123=v122:getChildren();for v137,v138 in ipairs(v123) do if (v138:getText()==v16("\249\203\253\72\198\197\252\28\192\193\246\72\219","\60\180\164\142")) then v138:destroy();end end return true;end);local v21= -(397 -(115 + 281));function logout() modules.game_interface.tryLogout(false);end xyz=g_game.getLocalPlayer():getPosition();setDefaultTab(v16("\75\93\23\32\55\249\1","\114\56\62\101\73\71\141"));macro(13956 -7956 ,function() local v124=0 + 0 ;local v125;local v126;local v127;while true do if (v124==(4 -2)) then v127=v126:getChildren();for v160,v161 in ipairs(v127) do if (v161:getText()==v16("\149\230\200\208\170\232\201\132\172\236\195\208\183","\164\216\137\187")) then local v162=v161:getChildren();for v165,v166 in ipairs(v162) do local v167=0 -0 ;local v168;local v169;while true do if ((868 -(550 + 317))==v167) then g_game.talkPrivate(5,name(),v169[v21]);v125=false;break;end if (v167==(0 -0)) then v168=v166:getText():trim();v169=v168:split("\n");v167=1 -0 ;end end end end end v124=8 -5 ;end if (v124==(289 -(134 + 151))) then return true;end if (v124==(1668 -(970 + 695))) then v21=v21 + 1 ;if ((v21>=5) and (v21<=(12 -5))) then v21=1998 -(582 + 1408) ;elseif ((v21>=(41 -29)) and (v21<=(19 -3))) then v21= -(3 -2);end v124=1828 -(1195 + 629) ;end if (v124==(1 -0)) then v126=g_ui.getRootWidget();if  not v125 then return;end v124=243 -(187 + 54) ;end if ((780 -(162 + 618))==v124) then if  not v20() then return;end v125=true;v124=1;end end end);
+
+setDefaultTab("scripts")
+ UI.Separator()
+
+-- Define o diretório principal para salvar as configurações do AutoDg
+MAIN_DIRECTORY_AUTODG = "/bot/" .. modules.game_bot.contentsPanel.config:getCurrentOption().text .. "/storage/" .. g_game.getWorldName() .. "/"
+STORAGE_DIRECTORY_AUTODG = MAIN_DIRECTORY_AUTODG .. name() .. "_autoDg.json"
+
+-- Perfil padrão
+profile_autoDg = {
+    _storage = {
+        autoDg = { enabled = false }
+    }
+}
+
+-- Cria o diretório se não existir
+if not g_resources.directoryExists(MAIN_DIRECTORY_AUTODG) then
+    g_resources.makeDir(MAIN_DIRECTORY_AUTODG)
+end
+
+-- Função para carregar o arquivo de configuração ao iniciar o bot
+function load_file_autoDg()
+    if g_resources.fileExists(STORAGE_DIRECTORY_AUTODG) then
+        local content = g_resources.readFileContents(STORAGE_DIRECTORY_AUTODG)
+        local status, result = pcall(json.decode, content)
+        if status and result and result._storage and result._storage.autoDg then
+            profile_autoDg._storage.autoDg = result._storage.autoDg
+            warn("Configurações do AutoDg carregadas com sucesso!")
+        else
+            warn("Erro ao carregar as configurações do AutoDg.")
+        end
+    else
+        warn("Arquivo de configurações do AutoDg não encontrado. Usando configurações padrão.")
+    end
+end
+
+-- Função para salvar o arquivo de configuração após alterações
+function save_file_autoDg()
+    local res = json.encode(profile_autoDg, 4)
+    local status, err = pcall(function() g_resources.writeFileContents(STORAGE_DIRECTORY_AUTODG, res) end)
+    if not status then
+        warn("Erro ao salvar o arquivo do AutoDg: " .. err)
+    else
+        warn("Configurações do AutoDg salvas com sucesso!")
+    end
+end
+
+-- Carrega o estado inicial do checkbox AutoDg quando o bot é iniciado
+load_file_autoDg()
+
+-- Inicializa o checkbox como desmarcado (false) por padrão
+storage.autoDgEnabled = profile_autoDg._storage.autoDg.enabled or false
+
+-- Configuração do checkbox AutoDg
+local checkBoxautoDg = setupUI([[
+CheckBox
+  id: checkBox
+  font: cipsoftFont
+  text: AutoDg
+]])
+checkBoxautoDg.onCheckChange = function(widget, checked)
+    storage.autoDgEnabled = checked
+    profile_autoDg._storage.autoDg.enabled = checked -- Atualiza o estado no profile
+    save_file_autoDg() -- Salva imediatamente após a mudança
+end
+checkBoxautoDg:setChecked(storage.autoDgEnabled)
+
+local function isAutoDgEnabled()
+    return storage.autoDgEnabled
+end
+
+ UI.Separator()
+--------------------------
+
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon yoth%] %-> disponível') then return; end
+  CaveBot.gotoLabel('yoth')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon renegade%] %-> disponível') then return; end
+  CaveBot.gotoLabel('renegade')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon bandit%] %-> disponível') then return; end
+  CaveBot.gotoLabel('bandit')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon gaara sc2%] %-> disponível') then return; end
+  CaveBot.gotoLabel('gaara')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+onTalk(function(name, level, mode, text, channelId, pos)
+if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon jya%] %-> disponível') then return; end
+  CaveBot.gotoLabel('jya')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+  onTalk(function(name, level, mode, text, channelId, pos)
+  if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon kimimaro%] %-> disponível') then return; end
+  CaveBot.gotoLabel('kimimaro')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+  onTalk(function(name, level, mode, text, channelId, pos)
+  if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon deidara%] %-> disponível') then return; end
+  CaveBot.gotoLabel('deidara')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+
+  onTalk(function(name, level, mode, text, channelId, pos)
+  if not isAutoDgEnabled() then return end
+ if not text:lower():find('%[dungeon tobirama%] %-> disponível') then return; end
+  CaveBot.gotoLabel('tobirama')
+  CaveBot.setOff()
+  CaveBot.setOn()
+
+local rootWidget = g_ui.getRootWidget();
+
+   local childrens = rootWidget:getChildren();
+
+   for _, child in ipairs(childrens) do
+
+       if child:getText() == "Mostrar texto" then
+
+          child:destroy();
+
+       end
+
+   end
+   return true;
+end)
+
+
+
+local saying_counter = -1  -- Inicializa o contador
+
+------------------------------
+      function logout()
+   modules.game_interface.tryLogout(false)
+end
+
+xyz = g_game.getLocalPlayer():getPosition()
+
+
+
+
+
+------------------------------------------------
+--------------------------------------------SAYING2
+setDefaultTab("scripts")
+macro(6000, function()
+if not isAutoDgEnabled() then return end
+    local a = true;
+    local rootWidget = g_ui.getRootWidget();
+
+    if not a then return; end
+
+    local childrens = rootWidget:getChildren();
+
+    for _, child in ipairs(childrens) do
+        if child:getText() == "Mostrar texto" then
+            local subChildrens = child:getChildren();
+
+            for _, subChild in ipairs(subChildrens) do
+                local text = subChild:getText():trim();
+                local textSplit = text:split("\n")
+
+				g_game.talkPrivate(5, name(), textSplit[saying_counter])			-- Usa o contador para obter o texto correspondente
+
+
+
+                a = false;
+            end
+        end
+    end
+
+    saying_counter = saying_counter + 1  -- Incrementa o contador
+
+    if saying_counter >= 5 and saying_counter <= 7  then
+       saying_counter = 8
+		else if saying_counter >= 12 and saying_counter <= 16 then
+			saying_counter = -1  -- Reseta o contador quando atingir 16
+		end
+	end
+	return true;
+end)
+
